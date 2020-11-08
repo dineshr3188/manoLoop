@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Mano-Loop-Test" verbose="2" parallel="none" thread-count="1">  
+ <parameter name="browser" value="chrome"/>
+ <parameter name="tabs" value="5"/>
+ 
+ 	<test name="LoopTest" group-by-instances="true">
+ 	<groups>
+			<run>
+  		  	<include name="uiplus" />		
+			</run>
+		</groups>
+		<packages>
+			<package name="org.mano.loop.ui.commons" />
+			<package name="org.mano.loop" />
+			</packages>
+	</test>
+</suite>
